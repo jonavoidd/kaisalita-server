@@ -1,5 +1,5 @@
 const admin = require("firebase-admin");
-const serviceAccount = require("../../secret/student-concerns-cddf6-firebase-adminsdk-fbsvc-ddd9c7e9ea.json");
+const serviceAccount = process.env.FIREBASE_KEY_PATH;
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
