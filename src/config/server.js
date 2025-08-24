@@ -10,7 +10,7 @@ const globalErrorHandler = require("../middleware/errorHandler");
 
 const app = express();
 const corsOption = {
-  origin: "http://localhost:5173",
+  origin: ["http://localhost:5173", "https://kaisalita.vercel.app"],
   methods: ["GET", "POST", "PATCH", "DELETE"],
 };
 
